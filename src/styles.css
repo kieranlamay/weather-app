@@ -17,6 +17,12 @@ body {
   line-height: 1.5;
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  background-image: url(cloud.jpg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  height: 100%;
+  overflow: hidden;
+  font-family: "Noto Sans", sans-serif;
 }
 
 /* 5. Improve media defaults */
@@ -67,4 +73,60 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+
+::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+.search {
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 25px;
+  border: none;
+  border-radius: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  color: white;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.container {
+  margin-left: 40px;
+  margin-top: 40px;
+  color: white;
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 23px;
+}
+
+.address {
+  font-size: 30px;
+}
+
+.temperature {
+  font-size: 70px;
+}
+.data-container {
+  display: flex;
+  gap: 30px;
+}
+
+.accessories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error {
+  margin-left: 40px;
+  color: white;
 }
